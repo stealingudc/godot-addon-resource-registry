@@ -45,6 +45,8 @@ This holds for any filesystem and project.
 
 Note that this is not recursive. If you entered `res://resources/items`, this will not look for any files in, for example: `res://resources/items/swords`. You should create a new Resource class for that (trust me, you should've done that either way).
 
+After this, you should be good to go. You may use any of the `ResourceRegistry`'s functions for resource comparison and it should automatically pick up on what Resources you actually have declared.
+
 Functionality
 ---------------
 *Skip this part if you're not a nerd.*
