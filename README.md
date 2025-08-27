@@ -8,8 +8,8 @@ It's useful for comparing different instances of the same resource in-script, si
 For example, if you were creating Resource instances (you would do it dynamically - this is just an example):
 
 ```gdscript
-var resource1 = preload("res://resources/items/sword.res") as Item;
-var resource2 = preload("res://resources/items/sword.res") as Item;
+var resource1 = preload("res://resources/items/sword.res");
+var resource2 = preload("res://resources/items/sword.res");
 
 print(resource1 == resource2); # false
 print(ResourceRegistry.same_class([resource1, resource2])); # true - matches "Item" -> "Item"
